@@ -1,0 +1,64 @@
+@import "variables";
+
+.heroBanner {
+    min-height: 67.8rem;
+    background: $brand-green-light;
+    display: flex;
+    align-items: center;
+
+    .gridWrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .heroLeft {
+            width: 100%;
+            max-width: 60.5rem;
+            .heatText {
+                font-size: 1.4rem;
+                font-weight: 700;
+                text-transform: uppercase;
+                color: $brand-green;
+                margin-bottom: 1.6rem;
+            }
+
+            h1 {
+                font-size: 5.2rem;
+                line-height: 130%;
+                color: $grey-headline;
+                margin-bottom: 1.2rem;
+            }
+
+            p {
+                font-size: 1.8rem;
+                font-family: 1.8rem;
+                line-height: 150%;
+                color: $grey-paragraph;
+                margin-bottom: 4rem;
+            }
+
+            .primaryBtn {
+                cursor: pointer;
+                color: $white;
+                background: $brand-green;
+                font-size: 1.4rem;
+                font-weight: 700;
+                text-transform: uppercase;
+                padding: 1.6rem 3.2rem;
+                border-radius: 4rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 0.8rem;
+                transition: background 0.3s ease;
+                &:hover {
+                    background: $brand-green-hover;
+                }
+                img {
+                    height: 2rem;
+                    width: 2rem;
+                }
+            }
+        }
+    }
+}

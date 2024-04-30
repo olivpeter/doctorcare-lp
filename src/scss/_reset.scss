@@ -1,0 +1,56 @@
+@import "variables";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    background: $brand-green-light-2;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+    color: inherit;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.gridWrapper {
+    width: 100%;
+    max-width: 115.2rem;
+    padding: 0 1.6rem;
+    margin: 0 auto;
+}

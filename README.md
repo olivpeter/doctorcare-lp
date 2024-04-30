@@ -10,3 +10,18 @@ Layout is avaliable on [Figma Community](https://www.figma.com/community/file/11
 - HTML
 - SCSS
 - JavaScript
+
+## Getting Started
+
+- First, clone this repository:
+
+```bash
+git clone https://github.com/olivpeter/doctorcare-lp.git
+```
+
+- Install [Live Server Extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+
+- Run Live Server in your IDE
+
+You can start editing the page by modifying `index.html`. The page auto-updates as you edit the file.
+You can find SCSS files in `src/scss`.

@@ -1,0 +1,65 @@
+@import "variables";
+
+.menuHeader {
+    display: flex;
+    align-items: center;
+    background: $brand-green-light;
+    height: 8rem;
+
+    .gridWrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .menuNavList {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 4rem;
+            color: $brand-green;
+            font-size: 1.6rem;
+            li {
+                position: relative;
+                transition: all 0.3s ease;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                &::after {
+                    content: "";
+                    width: 0%;
+                    height: 0.2rem;
+                    background: $brand-green;
+                    position: absolute;
+                    bottom: -0.5rem;
+                    transition: all 0.3s ease;
+                }
+                &:has(a:hover) {
+                    font-weight: 700;
+                    &::after {
+                        width: 100%;
+                    }
+                }
+
+                a {
+                    padding: 2.4rem;
+                }
+            }
+        }
+
+        .secondaryBtn {
+            cursor: pointer;
+            color: $brand-green;
+            font-size: 1.4rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding: 1rem 2.4rem;
+            border: 0.1rem solid $brand-green;
+            border-radius: 4rem;
+            transition: background 0.3s ease;
+            &:hover {
+                background: $brand-green;
+                color: $white;
+            }
+        }
+    }
+}

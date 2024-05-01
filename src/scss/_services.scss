@@ -1,7 +1,7 @@
 @import "variables";
 
 .services {
-    padding: 16rem 0rem;
+    padding: 8rem 0rem;
 
     .gridWrapper {
         display: flex;
@@ -11,7 +11,7 @@
             text-align: center;
             width: 100%;
             max-width: 49.7rem;
-            margin: 0 auto;
+            margin: 0 auto 6.4rem auto;
 
             .heatText {
                 font-size: 14px;
@@ -27,6 +27,42 @@
                 font-size: 4rem;
                 font-weight: 700;
                 color: $grey-headline;
+            }
+        }
+
+        .servicesGrid {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            row-gap: 4rem;
+
+            .servicesCard {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 0.8rem;
+                padding: 2.4rem;
+                background: $white;
+                border-radius: 0.6rem;
+                border: 1px solid $brand-green-light;
+                width: 34.7rem;
+                height: 20.7rem;
+
+                img {
+                    width: 2.4rem;
+                }
+
+                h3 {
+                    font-size: 2.4rem;
+                    font-weight: 700;
+                    color: $grey-headline;
+                }
+
+                p {
+                    font-size: 1.6rem;
+                    color: $grey-paragraph;
+                }
             }
         }
     }

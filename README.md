@@ -19,9 +19,9 @@ Layout is avaliable on [Figma Community](https://www.figma.com/community/file/11
 git clone https://github.com/olivpeter/doctorcare-lp.git
 ```
 
-- Install [Live Server Extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+- Install [Live Server Extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) and [Live Sass Compiler](https://marketplace.visualstudio.com/items?itemName=glenn2223.live-sass)
 
-- Run Live Server in your IDE
+- Run Live Server and Watch Sass in your IDE
 
 You can start editing the page by modifying `index.html`. The page auto-updates as you edit the file.
 You can find SCSS files in `src/scss`.

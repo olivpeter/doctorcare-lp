@@ -1,0 +1,32 @@
+@import "variables";
+
+.menuFooter {
+    background: $brand-green;
+    padding: 4rem 0;
+
+    .gridWrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .footerLeft {
+            img {
+                margin-bottom: 1.6rem;
+            }
+            .subtitle {
+                font-size: 1.4rem;
+                color: $white;
+                & + span {
+                    margin-top: 0.8rem;
+                }
+            }
+        }
+
+        .footerRight {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 3.2rem;
+        }
+    }
+}

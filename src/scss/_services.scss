@@ -1,0 +1,33 @@
+@import "variables";
+
+.services {
+    padding: 16rem 0rem;
+
+    .gridWrapper {
+        display: flex;
+        flex-direction: column;
+
+        .servicesTitle {
+            text-align: center;
+            width: 100%;
+            max-width: 49.7rem;
+            margin: 0 auto;
+
+            .heatText {
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 150%;
+                letter-spacing: 0.3rem;
+                text-transform: uppercase;
+                color: $brand-green;
+                margin-bottom: 1.6rem;
+            }
+
+            h2 {
+                font-size: 4rem;
+                font-weight: 700;
+                color: $grey-headline;
+            }
+        }
+    }
+}

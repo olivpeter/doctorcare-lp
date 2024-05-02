@@ -9,10 +9,10 @@ Layout is avaliable on [Figma Community](https://www.figma.com/community/file/11
 
 ## Functionalities
 
-- [] Responsive layout
+- [ ] Responsive layout
 - [x] Functional depositions carousel
-- [] Change header style on scroll
-- [] Responsive menu
+- [ ] Change header style on scroll
+- [ ] Responsive menu
 
 ## Technologies
 

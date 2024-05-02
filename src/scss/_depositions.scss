@@ -34,8 +34,10 @@
         }
 
         .depositionsCarousel {
+            overflow: hidden;
             .depositionsCarouselCard {
                 width: 54.4rem;
+                min-height: 27.3rem;
                 display: flex;
                 align-items: start;
                 flex-direction: column;
@@ -68,10 +70,22 @@
                     }
                 }
             }
+
+            .swiper-pagination {
+                bottom: 20rem;
+            }
+
+            .swiper-pagination-bullet {
+                background: $brand-green;
+            }
+
+            .swiper-pagination-bullet-active {
+                background: $brand-green;
+            }
         }
 
         .depositionsBrands {
-            margin-top: 10rem;
+            margin-top: 16rem;
 
             h3 {
                 font-size: 2.4rem;

@@ -1,0 +1,136 @@
+@import "variables";
+
+.depositions {
+    background: $white;
+    padding: 8rem 0;
+
+    .gridWrapper {
+        position: relative;
+
+        .depositionsTitle {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .heatText {
+                font-size: 14px;
+                font-weight: 700;
+                letter-spacing: 0.3rem;
+                text-transform: uppercase;
+                color: $brand-green;
+            }
+
+            h2 {
+                font-size: 4rem;
+                font-weight: 700;
+                line-height: 120%;
+                text-align: center;
+                color: $grey-headline;
+                width: 100%;
+                max-width: 48.1rem;
+                margin: 1.6rem 0 6rem 0;
+            }
+        }
+
+        .depositionsCarousel {
+            .depositionsCarouselCard {
+                width: 54.4rem;
+                display: flex;
+                align-items: start;
+                flex-direction: column;
+                gap: 2rem;
+                padding: 3.2rem;
+                background: $brand-green-light-2;
+                border-radius: 0.4rem;
+
+                p {
+                    font-size: 1.6rem;
+                    color: $grey-paragraph;
+                    line-height: 150%;
+                }
+
+                .user {
+                    display: flex;
+                    align-items: center;
+                    gap: 1.2rem;
+
+                    img {
+                        height: 4rem;
+                        width: 4rem;
+                        border-radius: 50%;
+                    }
+
+                    span {
+                        font-size: 1.6rem;
+                        font-weight: 700;
+                        color: $brand-green;
+                    }
+                }
+            }
+        }
+
+        .depositionsBrands {
+            margin-top: 10rem;
+
+            h3 {
+                font-size: 2.4rem;
+                font-weight: 700;
+                text-align: center;
+                color: $grey-headline;
+            }
+
+            .brandsList {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin: 4rem 0 20rem 0;
+            }
+        }
+
+        .depositionsCTA {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10rem;
+            background: $brand-green;
+            border-radius: 1rem;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -40rem;
+
+            h2 {
+                font-size: 4rem;
+                font-weight: 700;
+                line-height: 120%;
+                color: $white;
+                width: 100%;
+                max-width: 49.7rem;
+            }
+
+            .tertiaryBtn {
+                cursor: pointer;
+                color: $brand-green;
+                background: $white;
+                font-size: 1.4rem;
+                font-weight: 700;
+                text-transform: uppercase;
+                padding: 1.6rem 3.2rem;
+                border-radius: 4rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 0.8rem;
+                transition: background 0.3s ease;
+                &:hover {
+                    background: $brand-green-light;
+                }
+                img {
+                    height: 2rem;
+                    width: 2rem;
+                }
+            }
+        }
+    }
+}

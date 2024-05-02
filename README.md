@@ -7,10 +7,21 @@ This project is a responsive landing page layout designed initially for the Doct
 
 Layout is avaliable on [Figma Community](https://www.figma.com/community/file/1102912263666619803/doctorcare)
 
+## Functionalities
+
+- [] Responsive layout
+- [x] Functional depositions carousel
+- [] Change header style on scroll
+- [] Responsive menu
+
 ## Technologies
 
 | HTML | SCSS | JavaScript |
 | ---- | ---- | ---------- |
+
+## Libs
+
+- [SwiperJs](https://swiperjs.com/get-started)
 
 ## Getting Started
 

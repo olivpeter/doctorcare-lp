@@ -4,88 +4,90 @@
     background: $white;
     padding: 8rem 0;
 
+    .depositionsTitle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .heatText {
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 0.3rem;
+            text-transform: uppercase;
+            color: $brand-green;
+        }
+
+        h2 {
+            font-size: 4rem;
+            font-weight: 700;
+            line-height: 120%;
+            text-align: center;
+            color: $grey-headline;
+            width: 100%;
+            max-width: 48.1rem;
+            margin-top: 1.6rem;
+        }
+    }
+
+    .depositionsCarousel {
+        overflow: hidden;
+        padding: 6rem 0;
+        .depositionsCarouselCard {
+            width: 54.4rem;
+            min-height: 27.3rem;
+            display: flex;
+            align-items: start;
+            flex-direction: column;
+            gap: 2rem;
+            padding: 3.2rem;
+            background: $brand-green-light-2;
+            border-radius: 0.4rem;
+
+            p {
+                font-size: 1.6rem;
+                color: $grey-paragraph;
+                line-height: 150%;
+            }
+
+            .user {
+                display: flex;
+                align-items: center;
+                gap: 1.2rem;
+
+                img {
+                    height: 4rem;
+                    width: 4rem;
+                    border-radius: 50%;
+                }
+
+                span {
+                    font-size: 1.6rem;
+                    font-weight: 700;
+                    color: $brand-green;
+                }
+            }
+        }
+
+        .swiper-pagination {
+            z-index: 9;
+            bottom: 0;
+        }
+
+        .swiper-pagination-bullet {
+            background: $brand-green;
+        }
+
+        .swiper-pagination-bullet-active {
+            background: $brand-green;
+        }
+    }
+
     .gridWrapper {
         position: relative;
 
-        .depositionsTitle {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-
-            .heatText {
-                font-size: 14px;
-                font-weight: 700;
-                letter-spacing: 0.3rem;
-                text-transform: uppercase;
-                color: $brand-green;
-            }
-
-            h2 {
-                font-size: 4rem;
-                font-weight: 700;
-                line-height: 120%;
-                text-align: center;
-                color: $grey-headline;
-                width: 100%;
-                max-width: 48.1rem;
-                margin: 1.6rem 0 6rem 0;
-            }
-        }
-
-        .depositionsCarousel {
-            overflow: hidden;
-            .depositionsCarouselCard {
-                width: 54.4rem;
-                min-height: 27.3rem;
-                display: flex;
-                align-items: start;
-                flex-direction: column;
-                gap: 2rem;
-                padding: 3.2rem;
-                background: $brand-green-light-2;
-                border-radius: 0.4rem;
-
-                p {
-                    font-size: 1.6rem;
-                    color: $grey-paragraph;
-                    line-height: 150%;
-                }
-
-                .user {
-                    display: flex;
-                    align-items: center;
-                    gap: 1.2rem;
-
-                    img {
-                        height: 4rem;
-                        width: 4rem;
-                        border-radius: 50%;
-                    }
-
-                    span {
-                        font-size: 1.6rem;
-                        font-weight: 700;
-                        color: $brand-green;
-                    }
-                }
-            }
-
-            .swiper-pagination {
-                bottom: 20rem;
-            }
-
-            .swiper-pagination-bullet {
-                background: $brand-green;
-            }
-
-            .swiper-pagination-bullet-active {
-                background: $brand-green;
-            }
-        }
-
         .depositionsBrands {
-            margin-top: 16rem;
+            margin-top: 8rem;
 
             h3 {
                 font-size: 2.4rem;

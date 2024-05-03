@@ -7,23 +7,28 @@ This project is a responsive landing page layout designed initially for the Doct
 
 Layout is avaliable on [Figma Community](https://www.figma.com/community/file/1102912263666619803/doctorcare)
 
-## Functionalities
+## 🔥 Functionalities
 
 - [ ] Responsive layout
 - [x] Functional depositions carousel
+- [x] Smooth Scroll
 - [ ] Change header style on scroll
-- [ ] Responsive menu
+- [ ] Responsive menu with open animation
+- [ ] Open form modal on button click
+- [ ] Save form data in variables
+- [ ] Send Whatsapp mensage with Whatsapp API
 
-## Technologies
+## 🔨 Technologies
 
 | HTML | SCSS | JavaScript |
 | ---- | ---- | ---------- |
 
-## Libs
+## 📚 Libs
 
 - [SwiperJs](https://swiperjs.com/get-started)
+- [Lenis Smooth Scroll](https://github.com/darkroomengineering/lenis?tab=readme-ov-file#introduction)
 
-## Getting Started
+## ⚙️ Getting Started
 
 - First, clone this repository:
 
@@ -33,7 +38,7 @@ git clone https://github.com/olivpeter/doctorcare-lp.git
 
 - Install [Live Server Extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) and [Live Sass Compiler](https://marketplace.visualstudio.com/items?itemName=glenn2223.live-sass)
 
-- Run Live Server and Watch Sass in your IDE
+- Run `Live Server` and `Watch Sass`
 
 You can start editing the page by modifying `index.html`. The page auto-updates as you edit the file.
 You can find SCSS files in `src/scss`.

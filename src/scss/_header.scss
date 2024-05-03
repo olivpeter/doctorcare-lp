@@ -1,8 +1,10 @@
 @import "variables";
 
 .menuHeader {
+    z-index: 10;
+    position: sticky;
+    top: 0;
     display: flex;
-    align-items: center;
     background: $brand-green-light;
     height: 8rem;
 

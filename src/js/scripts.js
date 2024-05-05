@@ -26,14 +26,12 @@ var slide = new Swiper(".depositionsCarousel", {
   },
 });
 
-const modalBtn = document.getElementById("modalBtn");
 const modalForm = document.getElementById("modalOverlay");
-
-modalBtn.addEventListener("click", function () {
-  modalForm.classList.add("open");
-});
 
 modalForm.addEventListener("click", function (event) {
   event.target === modalForm ? modalForm.classList.remove("open") : null;
-  console.log(event);
 });
+
+function openModal() {
+  modalForm.classList.add("open");
+}

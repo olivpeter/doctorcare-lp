@@ -42,6 +42,10 @@ span {
     display: block;
 }
 
+button {
+    cursor: pointer;
+}
+
 input,
 button,
 textarea,
@@ -50,6 +54,7 @@ select {
     background: transparent;
     border: none;
     outline: none;
+    display: block;
 }
 
 .gridWrapper {

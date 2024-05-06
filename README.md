@@ -26,7 +26,6 @@ Layout is avaliable on [Figma Community](https://www.figma.com/community/file/11
 ## 📚 Libs
 
 - [SwiperJs](https://swiperjs.com/get-started)
-- [Lenis Smooth Scroll](https://github.com/darkroomengineering/lenis?tab=readme-ov-file#introduction)
 
 ## ⚙️ Getting Started
 

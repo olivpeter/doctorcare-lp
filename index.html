@@ -20,17 +20,17 @@
         <img src="/public/Doctorcare Logo.svg" alt="DoctorCare Logo" />
         <nav class="menu">
           <ul class="menuNavList">
-            <li><a href="#">Início</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Serviços</a></li>
-            <li><a href="#">Depoimentos</a></li>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#depoimentos">Depoimentos</a></li>
+            <li><a href="#sobre">Sobre</a></li>
           </ul>
         </nav>
         <button onclick="openModal()" class="secondaryBtn">Agendar consulta</button>
       </div>
     </header>
 
-    <section class="heroBanner">
+    <section class="heroBanner" id="inicio">
       <div class="gridWrapper">
         <div class="heroLeft">
           <span class="heatText">Boas-Vindas ao DoctorCare 👋</span>
@@ -68,7 +68,7 @@
       </ul>
     </section>
 
-    <section class="services">
+    <section class="services" id="servicos">
       <div class="gridWrapper">
         <div class="servicesTitle">
           <span class="heatText">Serviços</span>
@@ -127,7 +127,7 @@
       </div>
     </section>
 
-    <section class="depositions">
+    <section class="depositions" id="depoimentos">
       <div class="gridWrapper depositionsTitle">
         <span class="heatText">Depoimentos</span>
         <h2>O que os clientes dizem sobre o DoctorCare</h2>
@@ -218,7 +218,7 @@
       </div>
     </section>
 
-    <section class="aboutUs">
+    <section class="aboutUs" id="sobre">
       <div class="gridWrapper">
         <div class="aboutLeft">
           <img src="/src/assets/img_sobre.png" alt="Médico cuidando de uma família" />
@@ -276,13 +276,19 @@
             <div class="formContainer">
               <label for="nameInput">Nome</label>
               <div class="inputBox">
-                <input type="text" id="nameInput" placeholder="Digite seu nome" name="nameInput" />
+                <input type="text" id="nameInput" placeholder="Digite seu nome" name="nameInput" required />
               </div>
             </div>
             <div class="formContainer">
               <label for="lastNameInput">Sobrenome</label>
               <div class="inputBox">
-                <input type="text" id="lastNameInput" placeholder="Digite seu sobrenome" name="lastNameInput" />
+                <input
+                  type="text"
+                  id="lastNameInput"
+                  placeholder="Digite seu sobrenome"
+                  name="lastNameInput"
+                  required
+                />
               </div>
             </div>
           </div>
@@ -290,13 +296,13 @@
             <div class="formContainer">
               <label for="emailInput">Email</label>
               <div class="inputBox">
-                <input type="mail" id="emailInput" placeholder="Digite seu email" name="emailInput" />
+                <input type="mail" id="emailInput" placeholder="Digite seu email" name="emailInput" required />
               </div>
             </div>
             <div class="formContainer">
               <label for="phoneInput">Whatsapp</label>
               <div class="inputBox">
-                <input type="text" id="phoneInput" placeholder="(00) 9 0000 - 0000" name="phoneInput" />
+                <input type="text" id="phoneInput" placeholder="(00) 9 0000 - 0000" name="phoneInput" required />
               </div>
             </div>
           </div>
@@ -310,6 +316,7 @@
                   cols="30"
                   rows="5"
                   placeholder="Descreva o que você precisa"
+                  required
                 ></textarea>
               </div>
             </div>

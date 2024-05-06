@@ -14,9 +14,9 @@ Layout is avaliable on [Figma Community](https://www.figma.com/community/file/11
 - [x] Smooth Scroll
 - [ ] Change header style on scroll
 - [ ] Responsive menu with open animation
-- [ ] Open form modal on button click
-- [ ] Save form data in variables
-- [ ] Send Whatsapp mensage with Whatsapp API
+- [x] Open form modal on button click
+- [x] Save form data in variables
+- [x] Send Whatsapp mensage with Whatsapp API
 
 ## 🔨 Technologies
 

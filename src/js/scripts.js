@@ -66,6 +66,24 @@ form.addEventListener("submit", (event) => {
     mensage: mensage,
   };
 
+  const completeName = user.name + " " + user.lastName;
+
+  const mensageToSend =
+    "Olá, me chamo " +
+    completeName +
+    ". Gostaria de receber uma cotação para do DoctorCare!" +
+    "\n\nEstou precisando de: " +
+    user.mensage +
+    ".\n\nSegue meus endereços de contato: " +
+    user.email +
+    " ou pelo whatsapp: " +
+    user.phone;
+
+  const whatsappMensage = encodeURIComponent(mensageToSend);
+  const phoneToSend = "31975712672";
+
+  window.open(`https://wa.me/${phoneToSend}?text=${whatsappMensage}`, "_blank");
+
   cleanForm();
   closeModal();
 });

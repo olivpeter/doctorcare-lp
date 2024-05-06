@@ -26,7 +26,7 @@
             <li><a href="#">Depoimentos</a></li>
           </ul>
         </nav>
-        <button class="secondaryBtn">Agendar consulta</button>
+        <button onclick="openModal()" class="secondaryBtn">Agendar consulta</button>
       </div>
     </header>
 
@@ -39,7 +39,7 @@
             Os médicos da DoctorCare vão além dos sintomas para tratar a causa raiz de sua doença e proporcionar uma
             cura a longo prazo.
           </p>
-          <button class="primaryBtn">
+          <button onclick="openModal()" class="primaryBtn">
             <img src="/src/assets/whatsapp-icon.svg" alt="Whatsapp Icon" />
             Agende sua consulta
           </button>
@@ -210,7 +210,7 @@
         </div>
         <div class="depositionsCTA">
           <h2>Comece a cuidar de sua saúde agora mesmo</h2>
-          <button class="tertiaryBtn">
+          <button onclick="openModal()" class="tertiaryBtn">
             <img src="/src/assets/whatsapp-icon-green.svg" alt="Whatsapp Icon" />
             Agende sua consulta
           </button>
@@ -251,7 +251,7 @@
               <span>contato@doctorcare.com</span>
             </li>
           </ul>
-          <button class="primaryBtn">
+          <button onclick="openModal()" class="primaryBtn">
             <img src="/src/assets/whatsapp-icon.svg" alt="Whatsapp Icon" />
             Agende sua consulta
           </button>
@@ -261,6 +261,66 @@
         </div>
       </div>
     </section>
+
+    <div id="modalOverlay" class="modalOverlay">
+      <div id="modalForm" class="modalForm">
+        <button id="closeModal" class="closeModal" onclick="closeModal()">
+          <img src="/src/assets/Close.svg" alt="" />
+        </button>
+        <div class="formTitle">
+          <img src="/src/assets/mail.svg" alt="Ícone de email" />
+          <h2>Preencha o formulário</h2>
+        </div>
+        <form id="contactForm" class="contactForm" action="">
+          <div class="formRow">
+            <div class="formContainer">
+              <label for="nameInput">Nome</label>
+              <div class="inputBox">
+                <input type="text" id="nameInput" placeholder="Digite seu nome" name="nameInput" />
+              </div>
+            </div>
+            <div class="formContainer">
+              <label for="lastNameInput">Sobrenome</label>
+              <div class="inputBox">
+                <input type="text" id="lastNameInput" placeholder="Digite seu sobrenome" name="lastNameInput" />
+              </div>
+            </div>
+          </div>
+          <div class="formRow">
+            <div class="formContainer">
+              <label for="emailInput">Email</label>
+              <div class="inputBox">
+                <input type="mail" id="emailInput" placeholder="Digite seu email" name="emailInput" />
+              </div>
+            </div>
+            <div class="formContainer">
+              <label for="phoneInput">Whatsapp</label>
+              <div class="inputBox">
+                <input type="text" id="phoneInput" placeholder="(00) 9 0000 - 0000" name="phoneInput" />
+              </div>
+            </div>
+          </div>
+          <div class="formRow">
+            <div class="formContainer">
+              <label for="mensageInput">Mensagem</label>
+              <div class="inputBox">
+                <textarea
+                  name="mensageInput"
+                  id="mensageInput"
+                  cols="30"
+                  rows="5"
+                  placeholder="Descreva o que você precisa"
+                ></textarea>
+              </div>
+            </div>
+          </div>
+          <button id="formBtn" class="formBtn">
+            Quero receber uma cotação
+            <img src="/src/assets/arrow-up.svg" alt="" />
+          </button>
+        </form>
+      </div>
+    </div>
 
     <footer class="menuFooter">
       <div class="gridWrapper">

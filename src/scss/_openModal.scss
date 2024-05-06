@@ -1,0 +1,126 @@
+@import "variables";
+
+.modalOverlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    &.open {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .modalForm {
+        padding: 3.2rem;
+        width: 100%;
+        max-width: 80rem;
+        background: $brand-green-light-2;
+        border-radius: 1rem;
+        position: relative;
+
+        .closeModal {
+            height: 4.8rem;
+            width: 4.8rem;
+            border-radius: 50%;
+            background-color: $brand-green;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            right: -2.4rem;
+            top: -2.4rem;
+        }
+
+        .formTitle {
+            display: flex;
+            align-items: center;
+            gap: 1.6rem;
+            margin-bottom: 3.6rem;
+
+            h2 {
+                font-size: 2rem;
+                font-weight: 700;
+            }
+        }
+
+        .contactForm {
+            display: flex;
+            flex-direction: column;
+            gap: 2.4rem;
+
+            .formRow {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 2.4rem;
+
+                .formContainer {
+                    flex: 1;
+
+                    label {
+                        display: block;
+                        font-size: 1.2rem;
+                        font-weight: 600;
+                        color: $brand-green-hover;
+                        text-transform: uppercase;
+                        margin-bottom: 0.4rem;
+                    }
+
+                    .inputBox {
+                        padding: 1.2rem;
+                        border: 1px solid $brand-green-light;
+                        border-radius: 0.6rem;
+                        &:has(input:focus) {
+                            border: 1px solid $brand-green;
+                        }
+                        &:has(textarea:focus) {
+                            border: 1px solid $brand-green;
+                        }
+
+                        input {
+                            display: block;
+                            width: 100%;
+                            font-size: 1.4rem;
+                            color: $grey-paragraph;
+                        }
+
+                        textarea {
+                            display: block;
+                            width: 100%;
+                            font-size: 1.4rem;
+                            color: $grey-paragraph;
+                        }
+                    }
+                }
+            }
+            button {
+                color: $white;
+                background: $brand-green;
+                font-size: 1.4rem;
+                font-weight: 700;
+                text-transform: uppercase;
+                padding: 1.6rem 3.2rem;
+                border-radius: 4rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 0.8rem;
+                transition: background 0.3s ease;
+                &:hover {
+                    background: $brand-green-hover;
+                }
+                img {
+                    height: 2rem;
+                    width: 2rem;
+                }
+            }
+        }
+    }
+}

@@ -1,47 +1,48 @@
-@import "/scss/partials/variables";
+@import "variables";
 
-.heroBanner {
-    min-height: 67.8rem;
-    background: $brand-green-light;
-    display: flex;
-    align-items: center;
+.contact {
+    padding: 8rem 0;
 
     .gridWrapper {
         display: flex;
         align-items: center;
         justify-content: space-between;
 
-        .heroLeft {
-            width: 100%;
-            max-width: 60.5rem;
-            .heatText {
-                font-size: 1.4rem;
+        .contactLeft {
+            display: flex;
+            flex-direction: column;
+            gap: 4rem;
+
+            h2 {
+                font-size: 4rem;
                 font-weight: 700;
-                letter-spacing: 0.3rem;
-                text-transform: uppercase;
-                color: $brand-green;
-                margin-bottom: 1.6rem;
-            }
-
-            h1 {
-                font-size: 5.2rem;
                 line-height: 120%;
-                color: $grey-headline;
-                margin-bottom: 1.2rem;
+                width: 100%;
+                max-width: 39rem;
             }
 
-            p {
-                font-size: 1.8rem;
-                font-family: 1.8rem;
-                line-height: 150%;
-                color: $grey-paragraph;
-                margin-bottom: 4rem;
+            .contactWay {
+                display: flex;
+                flex-direction: column;
+                gap: 2.4rem;
+
+                .contactItem {
+                    display: flex;
+                    align-items: center;
+                    gap: 0.8rem;
+
+                    span {
+                        font-size: 1.6rem;
+                        color: $grey-paragraph;
+                    }
+                }
             }
 
             .primaryBtn {
                 cursor: pointer;
                 color: $white;
                 background: $brand-green;
+                width: fit-content;
                 font-size: 1.4rem;
                 font-weight: 700;
                 text-transform: uppercase;

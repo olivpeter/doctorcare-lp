@@ -50,4 +50,4 @@ code .
 - Install and run [`Live Server Extension`](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 - Install and run [`Live Sass Compiler`](https://marketplace.visualstudio.com/items?itemName=glenn2223.live-sass)
 
-You can start editing the page by modifying `index.html`. The page auto-updates as you edit the file. You can find SCSS files in `/scss`.
+You can start editing the page by modifying `index.html`. The page auto-updates as you edit the file. You can find style sheets files in `/scss`.

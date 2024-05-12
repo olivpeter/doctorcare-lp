@@ -1,5 +1,5 @@
 var slide = new Swiper(".depositionsCarousel", {
-  slidesPerView: 2,
+  slidesPerView: 1,
   spaceBetween: 32,
   speed: 800,
   grabCursor: true,
@@ -10,6 +10,20 @@ var slide = new Swiper(".depositionsCarousel", {
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 1,
+      spaceBetween: 0,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 32,
+    },
+    1024: {
+      slidesPerView: 2,
+      spaceBetween: 32,
+    },
   },
 });
 

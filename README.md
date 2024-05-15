@@ -7,15 +7,14 @@ This project is a responsive landing page layout designed initially for the Doct
 
 Layout is avaliable on [Figma Community](https://www.figma.com/community/file/1102912263666619803/doctorcare)
 
-You can see in action [here](https://doctorcare-lp.vercel.app/)! #WIP
+You can see in action [here](https://doctorcare-lp.vercel.app/)!
 
 ## 🔥 Functionalities
 
-- [ ] Responsive layout
+- [x] Responsive layout
 - [x] Functional depositions carousel
 - [x] Smooth Scroll
-- [ ] Change header style on scroll
-- [ ] Responsive menu with open animation
+- [x] Responsive menu with open animation
 - [x] Open form modal on button click
 - [x] Save form data in variables
 - [x] Send Whatsapp mensage with Whatsapp API

@@ -1,5 +1,16 @@
 @import "variables";
 
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(8rem);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .modalOverlay {
     width: 100%;
     height: 100%;
@@ -12,10 +23,13 @@
     justify-content: center;
     opacity: 0;
     visibility: hidden;
-    transition: 0.3s ease;
+    transition: opacity 0.3s ease;
     &.open {
         opacity: 1;
         visibility: visible;
+        .modalForm {
+            animation: slideUp 0.5s ease forwards;
+        }
     }
 
     .modalForm {
@@ -120,6 +134,29 @@
                 img {
                     height: 2rem;
                     width: 2rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .modalOverlay {
+        .modalForm {
+            max-width: 90%;
+
+            .closeModal {
+                right: 2.4rem;
+                top: 2rem;
+            }
+
+            .contactForm {
+                .formRow {
+                    flex-direction: column;
+
+                    .formContainer {
+                        width: 100%;
+                    }
                 }
             }
         }

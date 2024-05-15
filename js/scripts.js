@@ -1,5 +1,5 @@
 var slide = new Swiper(".depositionsCarousel", {
-  slidesPerView: 2,
+  slidesPerView: 1,
   spaceBetween: 32,
   speed: 800,
   grabCursor: true,
@@ -11,6 +11,27 @@ var slide = new Swiper(".depositionsCarousel", {
     el: ".swiper-pagination",
     clickable: true,
   },
+  breakpoints: {
+    640: {
+      slidesPerView: 1,
+      spaceBetween: 32,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 32,
+    },
+    1024: {
+      slidesPerView: 2,
+      spaceBetween: 32,
+    },
+  },
+});
+
+const mobileMenu = document.getElementById("mobileMenu");
+const menu = document.getElementById("menu");
+
+mobileMenu.addEventListener("click", () => {
+  menu.classList.toggle("active");
 });
 
 const modalForm = document.getElementById("modalOverlay");
@@ -67,10 +88,20 @@ form.addEventListener("submit", (event) => {
     user.phone;
 
   const whatsappMensage = encodeURIComponent(mensageToSend);
-  const phoneToSend = "31975712672";
+  const phoneToSend = user.phone;
 
   window.open(`https://wa.me/${phoneToSend}?text=${whatsappMensage}`, "_blank");
 
   cleanForm();
   closeModal();
+});
+
+const menuItems = document.querySelectorAll(".menuNavList li");
+
+menuItems.forEach((item) => {
+  item.addEventListener("click", () => {
+    if (menu.classList.contains("active")) {
+      menu.classList.remove("active");
+    }
+  });
 });

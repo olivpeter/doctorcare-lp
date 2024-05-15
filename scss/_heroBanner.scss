@@ -63,3 +63,24 @@
         }
     }
 }
+
+@media screen and (max-width: 768px) {
+    .heroBanner .gridWrapper {
+        flex-direction: column;
+        padding-top: 4rem;
+
+        .heroLeft {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+
+            h1 {
+                font-size: 3.4rem;
+            }
+
+            .primaryBtn {
+                margin-bottom: 6rem;
+            }
+        }
+    }
+}

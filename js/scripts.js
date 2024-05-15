@@ -95,3 +95,13 @@ form.addEventListener("submit", (event) => {
   cleanForm();
   closeModal();
 });
+
+const menuItems = document.querySelectorAll(".menuNavList li");
+
+menuItems.forEach((item) => {
+  item.addEventListener("click", () => {
+    if (menu.classList.contains("active")) {
+      menu.classList.remove("active");
+    }
+  });
+});

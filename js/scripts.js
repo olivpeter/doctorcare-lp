@@ -14,7 +14,7 @@ var slide = new Swiper(".depositionsCarousel", {
   breakpoints: {
     640: {
       slidesPerView: 1,
-      spaceBetween: 0,
+      spaceBetween: 32,
     },
     768: {
       slidesPerView: 2,
@@ -81,7 +81,7 @@ form.addEventListener("submit", (event) => {
     user.phone;
 
   const whatsappMensage = encodeURIComponent(mensageToSend);
-  const phoneToSend = "31975712672";
+  const phoneToSend = user.phone;
 
   window.open(`https://wa.me/${phoneToSend}?text=${whatsappMensage}`, "_blank");
 

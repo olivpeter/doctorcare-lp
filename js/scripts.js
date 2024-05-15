@@ -27,6 +27,13 @@ var slide = new Swiper(".depositionsCarousel", {
   },
 });
 
+const mobileMenu = document.getElementById("mobileMenu");
+const menu = document.getElementById("menu");
+
+mobileMenu.addEventListener("click", () => {
+  menu.classList.toggle("active");
+});
+
 const modalForm = document.getElementById("modalOverlay");
 const form = document.getElementById("contactForm");
 

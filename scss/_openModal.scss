@@ -28,7 +28,7 @@
         opacity: 1;
         visibility: visible;
         .modalForm {
-            animation: slideUp 0.3s ease forwards;
+            animation: slideUp 0.5s ease forwards;
         }
     }
 
@@ -134,6 +134,29 @@
                 img {
                     height: 2rem;
                     width: 2rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .modalOverlay {
+        .modalForm {
+            max-width: 90%;
+
+            .closeModal {
+                right: 2.4rem;
+                top: 2rem;
+            }
+
+            .contactForm {
+                .formRow {
+                    flex-direction: column;
+
+                    .formContainer {
+                        width: 100%;
+                    }
                 }
             }
         }

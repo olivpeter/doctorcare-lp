@@ -30,7 +30,25 @@
                 color: $brand-green;
             }
             &:not(:last-child) {
-                border-right: 1px solid $brand-green;
+                border-right: 0.1rem solid $brand-green;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .numbersList {
+        margin-top: 0;
+
+        ul {
+            flex-direction: column;
+            padding: 4rem 0;
+
+            .numberListItem {
+                &:not(:last-child) {
+                    border-right: 0;
+                    margin-bottom: 3.2rem;
+                }
             }
         }
     }

@@ -32,11 +32,9 @@
         }
 
         .servicesGrid {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            row-gap: 4rem;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 4rem;
 
             .servicesCard {
                 display: flex;
@@ -47,8 +45,6 @@
                 background: $white;
                 border-radius: 0.6rem;
                 border: 1px solid $brand-green-light;
-                width: 34.7rem;
-                height: 20.7rem;
 
                 img {
                     width: 2.4rem;
@@ -64,6 +60,21 @@
                     font-size: 1.6rem;
                     color: $grey-paragraph;
                 }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .services {
+        .gridWrapper {
+            .servicesTitle {
+                h2 {
+                    font-size: 3.2rem;
+                }
+            }
+            .servicesGrid {
+                grid-template-columns: 1fr;
             }
         }
     }

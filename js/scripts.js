@@ -1,107 +1,97 @@
-var slide = new Swiper(".depositionsCarousel", {
-  slidesPerView: 1,
-  spaceBetween: 32,
-  speed: 800,
-  grabCursor: true,
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  breakpoints: {
-    640: {
-      slidesPerView: 1,
-      spaceBetween: 32,
-    },
-    768: {
-      slidesPerView: 2,
-      spaceBetween: 32,
-    },
-    1024: {
-      slidesPerView: 2,
-      spaceBetween: 32,
-    },
-  },
-});
+let slide = new Swiper('.depositionsCarousel', {
+	slidesPerView: 1,
+	spaceBetween: 32,
+	speed: 800,
+	grabCursor: true,
+	autoplay: {
+		delay: 2500,
+		disableOnInteraction: false,
+	},
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+	},
+	breakpoints: {
+		640: {
+			slidesPerView: 1,
+			spaceBetween: 32,
+		},
+		768: {
+			slidesPerView: 2,
+			spaceBetween: 32,
+		},
+		1024: {
+			slidesPerView: 2,
+			spaceBetween: 32,
+		},
+	},
+})
 
-const mobileMenu = document.getElementById("mobileMenu");
-const menu = document.getElementById("menu");
+const mobileMenu = document.getElementById('mobileMenu')
+const menu = document.getElementById('menu')
 
-mobileMenu.addEventListener("click", () => {
-  menu.classList.toggle("active");
-});
+mobileMenu.addEventListener('click', () => {
+	menu.classList.toggle('active')
+})
 
-const modalForm = document.getElementById("modalOverlay");
-const form = document.getElementById("contactForm");
+const modalForm = document.getElementById('modalOverlay')
+const form = document.getElementById('contactForm')
 
-modalForm.addEventListener("click", (event) => {
-  event.target === modalForm ? modalForm.classList.remove("open") : null;
-});
+modalForm.addEventListener('click', ({ target }) => {
+	target === modalForm ? modalForm.classList.remove('open') : null
+})
 
 function openModal() {
-  modalForm.classList.add("open");
+	modalForm.classList.add('open')
 }
 
 function closeModal() {
-  modalForm.classList.remove("open");
+	modalForm.classList.remove('open')
 }
 
 function cleanForm() {
-  var name = (document.getElementById("nameInput").value = "");
-  var lastName = (document.getElementById("lastNameInput").value = "");
-  var email = (document.getElementById("emailInput").value = "");
-  var phone = (document.getElementById("phoneInput").value = "");
-  var mensage = (document.getElementById("mensageInput").value = "");
+	let name = (document.getElementById('nameInput').value = '')
+	let lastName = (document.getElementById('lastNameInput').value = '')
+	let email = (document.getElementById('emailInput').value = '')
+	let phone = (document.getElementById('phoneInput').value = '')
+	let mensage = (document.getElementById('mensageInput').value = '')
 }
 
-form.addEventListener("submit", (event) => {
-  event.preventDefault();
+form.addEventListener('submit', (e) => {
+	e.preventDefault()
 
-  var name = document.getElementById("nameInput").value;
-  var lastName = document.getElementById("lastNameInput").value;
-  var email = document.getElementById("emailInput").value;
-  var phone = document.getElementById("phoneInput").value;
-  var mensage = document.getElementById("mensageInput").value;
+	let name = document.getElementById('nameInput').value
+	let lastName = document.getElementById('lastNameInput').value
+	let email = document.getElementById('emailInput').value
+	let phone = document.getElementById('phoneInput').value
+	let mensage = document.getElementById('mensageInput').value
 
-  const user = {
-    name: name,
-    lastName: lastName,
-    email: email,
-    phone: phone,
-    mensage: mensage,
-  };
+	const user = {
+		name: name,
+		lastName: lastName,
+		email: email,
+		phone: phone,
+		mensage: mensage,
+	}
 
-  const completeName = user.name + " " + user.lastName;
+	const completeName = `${user.name} ${user.lastName}`
 
-  const mensageToSend =
-    "Olá, me chamo " +
-    completeName +
-    ". Gostaria de receber uma cotação para do DoctorCare!" +
-    "\n\nEstou precisando de: " +
-    user.mensage +
-    ".\n\nSegue meus endereços de contato: " +
-    user.email +
-    " ou pelo whatsapp: " +
-    user.phone;
+	const mensageToSend = `Olá, me chamo ${completeName}. Gostaria de receber uma cotação para do DoctorCare! Gostaria de: ${user.mensage}. Podem me contatar pelo email: ${user.email} ou pelo telefone ${user.phone}`
 
-  const whatsappMensage = encodeURIComponent(mensageToSend);
-  const phoneToSend = user.phone;
+	const whatsappMensage = encodeURIComponent(mensageToSend)
 
-  window.open(`https://wa.me/${phoneToSend}?text=${whatsappMensage}`, "_blank");
+	window.open(`https://wa.me/${user.phone}?text=${whatsappMensage}`, '_blank')
 
-  cleanForm();
-  closeModal();
-});
+	cleanForm()
+	closeModal()
+})
 
-const menuItems = document.querySelectorAll(".menuNavList li");
+const menuItems = document.querySelectorAll('.menuNavList li')
 
 menuItems.forEach((item) => {
-  item.addEventListener("click", () => {
-    if (menu.classList.contains("active")) {
-      menu.classList.remove("active");
-    }
-  });
-});
+	item.addEventListener('click', () => {
+		if (menu.classList.contains('active')) {
+			menu.classList.remove('active')
+		}
+	})
+})

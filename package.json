@@ -1,0 +1,30 @@
+{
+	"name": "doctorcare-lp",
+	"version": "1.0.0",
+	"description": "Developed during NLW Return in May 2022 by Rocketseat, the project is a responsive landing page for the DoctorCare medical consultation platform.",
+	"main": "index.html",
+	"scripts": {
+		"dev": "lite-server"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/olivpeter/doctorcare-lp.git"
+	},
+	"keywords": [
+		"javascript",
+		"landing-page",
+		"modal",
+		"scss",
+		"responsive",
+		"whatsapp-api"
+	],
+	"author": "Pedro Oliveira",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/olivpeter/doctorcare-lp/issues"
+	},
+	"homepage": "https://github.com/olivpeter/doctorcare-lp#readme",
+	"devDependencies": {
+		"lite-server": "^2.6.1"
+	}
+}
